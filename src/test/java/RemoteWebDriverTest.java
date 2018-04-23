@@ -123,7 +123,7 @@ public class RemoteWebDriverTest {
 
         System.out.println("=================================================================");
         System.out.println("See the complete report at: ");
-        System.out.println("https://" + host + "." + serv + ".perfectomobile.com/?jobName[0]=" + jobn + "&jobNumber[0]=" + jobv);
+        System.out.println("https://" + host + "." + serv + ".test.recruitcrm.io/?jobName[0]=" + jobn + "&jobNumber[0]=" + jobv);
         System.out.println("=================================================================");
     }
 }
