@@ -14,13 +14,13 @@ import javax.rmi.CORBA.Util;
 import java.net.MalformedURLException;
 
 /**
- * For programming samples and updated templates refer to the Perfecto GitHub at: https://github.com/PerfectoCode
+ * For programming samples and updated templates refer to the Perfecto GitHub at: https://github.com/RCRM/CircleCIDemo
  */
 public class RemoteWebDriverTest {
 
     private RemoteWebDriver driver;
     private ReportiumClient reportiumClient;
-    private static final String TestNamePrefix = "Perfecto DigitalZoom Reporting - ";
+    private static final String TestNamePrefix = "CircleCI Demo by Krishnmohan Yadav- ";
     private String TestName;
 
     /**
@@ -63,10 +63,10 @@ public class RemoteWebDriverTest {
         reportiumClient.testStart(TestName, new TestContext(platformName, platformVersion, browserName));
 
         reportiumClient.testStep("Open google"); // testStep
-        driver.get("https://www.google.com/");
+        driver.get("https://https://test.recruitcrm.io/");
 
-        reportiumClient.testStep("Search PerfectoCode"); // testStep
-        driver.findElement(By.name("q")).sendKeys("PerfectoCode");
+        reportiumClient.testStep("Signup with linkedin"); // testStep
+        driver.findElement(By.xpath("/html/body/div[1]/div/div[2]/div[2]/form/div/div[5]/a/span[2]")).click();
 
         /**
          * Complete your test here ...
